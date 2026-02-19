@@ -1,11 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #2e1a47;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,6 +35,15 @@ h1 {
   line-height: 1.1;
 }
 
+input {
+  width: 20rem;
+  background-color: #dedede;
+  border: 1px solid #5d5c6a; 
+  color: black;
+  border-radius: 5px;
+  padding: 10px; 
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -42,16 +51,32 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #e8a317;
+  color: black;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: #e9ad35;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.input-container { 
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.open-positions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.job-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #231434;
 }
 
 @media (prefers-color-scheme: light) {
