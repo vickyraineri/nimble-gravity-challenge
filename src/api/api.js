@@ -33,4 +33,3 @@ export async function applyToJob(body) {
 
   return res.json();
 }
-

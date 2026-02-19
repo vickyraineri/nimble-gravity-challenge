@@ -10,6 +10,11 @@ function App() {
   const [error, setError] = useState(null);
 
   const handleLoadData = async () => {
+    if (!email) {
+      setError("Email is required");
+      return;
+    }
+
     try {
       setLoading(true);
       setError(null);
@@ -53,4 +58,3 @@ function App() {
 }
 
 export default App;
-

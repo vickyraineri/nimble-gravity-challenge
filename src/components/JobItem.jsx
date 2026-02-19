@@ -7,9 +7,15 @@ function JobItem({ job, candidate }) {
   const [message, setMessage] = useState(null);
 
   const handleSubmit = async () => {
+    setMessage(null);
+
+    if (!repoUrl.startsWith("https://github.com/")) {
+      setMessage("Please enter a valid GitHub URL");
+      return;
+    }
+
     try {
       setLoading(true);
-      setMessage(null);
 
       await applyToJob({
         uuid: candidate.uuid,
@@ -19,6 +25,7 @@ function JobItem({ job, candidate }) {
       });
 
       setMessage("Application sent successfully!");
+      setRepoUrl("");
     } catch (err) {
       setMessage("Error sending application");
     } finally {
