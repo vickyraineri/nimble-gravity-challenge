@@ -1,16 +1,76 @@
-# React + Vite
+# Nimble Gravity – Junior Fullstack Developer Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini React application built as part of the Nimble Gravity technical challenge.
 
-Currently, two official plugins are available:
+The app connects to Nimble Gravity's API to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Retrieve candidate information by email  
+- Fetch available job positions  
+- Apply to a selected job by submitting a GitHub repository URL  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- React (Vite)  
+- JavaScript (ES6+)  
+- Fetch API  
+- CSS (basic styling)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Installation & Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/vickyraineri/nimble-gravity-challenge.git
+cd nimble-gravity-challenge
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+The app will run locally at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧠 Features
+
+- Fetch candidate data by email  
+- Display list of open job positions  
+- Submit application to a selected job  
+- Loading and error state handling  
+- Input validation for repository URL  
+- Clean component structure and API separation  
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── api/
+ ├── components/
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## 📝 Notes
+
+This project was developed specifically for the Nimble Gravity Junior Fullstack Developer challenge.
